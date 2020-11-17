@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="utf-8">
+        <title>Республиканский клинический неврологический центр"</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+        <script src="jquery.js"></script>
+<script>
+function fulltime() {
+	var time=new Date();
+	document.clock.full.value=time.toLocaleString();
+	setTimeout('fulltime()',500)
+}
+$( init );
+function init() {
+  $('#myButton').bind( 'click', sayRecords );
+}
+function sayRecords() {
+  alert( "Запись временно приостановлена до улучшения эпидемиологической обстановки" );
+}
+
+</script>
+ </head>
+
+ <body onLoad="clock_status()">
+ <div class="content">
+            <div class="logo"><img src="logo.gif" alt="РКНЦ" width=100 height=100/></div>
+			<div class="name"><h4>Государственное автономное учреждение здравоохранения<br>
+	    РЕСПУБЛИКАНСКИЙ КЛИНИЧЕСКИЙ НЕВРОЛОГИЧЕСКИЙ ЦЕНТР</h4></div>
+		     <div class="pole"><h3>Регистратура:<br>
+                    			 8(843)278-97-18</h3>
+							 <form name=clock>
+                                <input type=text size=17 name=full>
+                             </form>
+                             <script>fulltime();</script>
+              </div>
+
+	<div class="navi"><h4>Навигация</h4>
+  <div><a href="index.html">РКНЦ</a>
+    <details><summary></summary>
+      <div><a href=" ">Руководство</a></div>
+      <div><a href=" ">Специалисты</a></div>
+      <div><a href=" ">Отделения</a></div>
+      <div><a href=" ">РКДЦ ДЗ МЗ РТ</a></div>
+      <div><a href=" ">Кафедра неврологии</a></div>
+      <div><a href=" ">Документы</a></div>
+    </details>
+  </div>
+    <div><a href="">Пациентам</a>
+    <details><summary></summary>
+      <div><a href="">Консультация</a></div>
+      <div><a href="">Госпитализация</a></div>
+      <div><a href="">Реабилитация</a></div>
+    </details>
+  </div>
+     <div><a href="">Платные медуслуги</a>
+    <details><summary></summary>
+      <div><a href="">Положение</a></div>
+      <div><a href="">Прейскурант</a></div>
+    </details>
+  </div>
+  <div><a href="">Новости</a></div>
+  <div><a href="">Режим работы</a></div>
+</div>
+			<div class="telo">
+			<p><b><i>Государственное автономное учреждение здравоохранения
+	    «Республиканский клинический неврологический центр» (ГАУЗ "РКНЦ") </i></b> лечебное учреждение,
+		оказывающее на современном методическом уровне специализированную медицинскую помощь больным с
+	    социально-экономически значимыми заболеваниями нервной системы.</p>
+		<h4><font  color=#00008B>Основные направления лечебно-диагностической деятельности ГАУЗ "РКНЦ":</font></h4>
+		<ol>
+           <li>
+		     Диагностика и лечение демиелинизирующих заболеваний нервной системы: рассеянный склероз и
+		     другие лейкоэнцефалопатии, хроническая воспалительная демиелинизирующая полирадикулоневропатия
+			 (ХВДП) и т.д.
+		   </li>
+           <li>
+		      Диагностика и лечение заболеваний периферической нервной системы
+			  (радикулопатии, плексопатии, мононевропатии) различной этиологии.
+		   </li>
+           <li>Восстановительное и реабилитационное лечение больных с последствиями
+		   перенесенного инсульта, черепно-мозговой и спинальной травмы.
+		   </li>
+           <li>Диагностика и лечение дегенеративных заболеваний центральной и периферической нервной системы.
+		   </li>
+	       		</ol>
+         <div id="block" class="crn">Соблюдайте дистанцию! Носите маски!</div>
+		</div>
+		<div class="info">
+	    <p align=center><font  color=#00008B><strong>Фотогалерея</strong></font></p>
+		<img id="image" src="foto1.gif" width=250 height=150 onClick="imgsrc();">
+		<p align=center><font  color=#00008B><strong>Схема проезда</strong></font></p>
+       <p align=center>
+	      <a href="http://maps.yandex.ru/?ol=biz&amp;oid=1115852884&amp;ll=49.119748%2C55.764308&amp;spn=0.012563%2C0.003768&amp;z=17&amp;l=sat">
+          <img src="proezd.bmp" width=250 height=250></a>
+	   </p>
+	   <input type="button" id="myButton" value="Запись на прием к врачу" />
+	  </div>
+ </div>
+  <div class="fin">
+ <hr>
+ <h6 align="center">Адрес: Россия, Респ. Татарстан, гор. Казань, ул. Ватутина, д. 13 <br>
+ Лицензия № ЛО-16-01-004452 от 25 сентября 2015 г.</h6>
+ </div>
+     <script src="index.js"></script>
+	 <script>
+// Анимация - при открытии страницы появляется и увеличивается надпись "Соблюдайте дистанцию! Носите маски!"
+$(document).ready( function(){
+  $("#block").animate({
+    width: "80%",
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 1500 );
+});
+</script>
+ </body>
+</html>
